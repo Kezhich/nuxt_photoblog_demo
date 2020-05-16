@@ -5,8 +5,6 @@ const User = require("../models/user.model");
 
 module.exports.login = async (req, res) => {
   const candidate = await User.findOne({ login: req.body.login });
-  console.log(req.body);
-  console.log(candidate);
 
   if (candidate) {
     const isPasswordCorrect = bcrypt.compareSync(

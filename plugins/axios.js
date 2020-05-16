@@ -1,6 +1,5 @@
 export default function({ $axios, redirect, store }) {
   $axios.interceptors.request.use(request => {
-    console.log("Iterceptor", request);
     if (
       store.getters["auth/isAuthenticated"] &&
       !request.headers.common["Authorization"]

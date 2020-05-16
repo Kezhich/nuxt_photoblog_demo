@@ -71,7 +71,6 @@ export default {
   }),
   methods: {
     handleImageChange(file, fileList) {
-      console.log(file);
       this.image = file.raw;
     },
     onSubmit() {

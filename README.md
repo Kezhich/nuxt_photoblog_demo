@@ -1,10 +1,10 @@
-# nuxt-blog
+# Блог на nuxt.js
 
 > simple blog built on nuxt
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
